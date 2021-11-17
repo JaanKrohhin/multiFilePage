@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	padding: 10px;
+	background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+	padding: 20px;
+	text-align: center;
+	background: lightcoral;
+	font-style: italic;
+}
+
+.header h1 {
+	font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: lightblue;
+	font-weight: bold;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: aliceblue;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+	padding: 20px;
+	margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	font-weight: bold;
+	margin-top: 20px;
+	background-color: lightcoral;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
+/*puzzle*/
+div#left img{
+	width:150px;
+	height: 125px;
+}
+div#left{
+	margin-left: 15px;
+}
+div#middle{
+	position: absolute;
+	top: 250px;
+	left: 34%;
+	width:60%;
+	height:50%
+}
+div#middle img{
+	width:150px;
+	height: 125px;
+}
+div#right{
+	position: absolute;
+	top: 250px;
+	right:5%;
+}
