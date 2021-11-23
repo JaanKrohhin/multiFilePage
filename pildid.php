@@ -1,7 +1,8 @@
 <form method="post" action="">
     <select name="pildid">
-        <option value="">Vali pilt</option>
+        <option value="">---Vali pilt---</option>
         <?php
+        $help=false;
         $kataloog = 'pildid';
         $asukoht=opendir($kataloog);
         while($rida = readdir($asukoht)){
@@ -15,10 +16,11 @@
 </form>
 <?php
 if(!empty($_POST['pildid'])){
+
     $pilt = $_POST['pildid'];
     $pildi_aadress = 'pildid/'.$pilt;
+    
     $pildi_andmed = getimagesize($pildi_aadress);
-
     $laius = $pildi_andmed[0];
     $korgus = $pildi_andmed[1];
     $formaat = $pildi_andmed[2];
@@ -33,7 +35,7 @@ if(!empty($_POST['pildid'])){
     } else {
         $ratio = $max_korgus/$korgus;
     }
-
+    
     //uute mõõtmete leidmine
     $pisi_laius = round($laius*$ratio);
     $pisi_korgus = round($korgus*$ratio);

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/board.js"></script>
     <script src="js/puzzleland.js"></script>
-    <script src="../../js/calc.js"></script>
+    <script src="js/calc.js"></script>
     <title>Krohhin PHP Leht</title>
 </head>
 <body>

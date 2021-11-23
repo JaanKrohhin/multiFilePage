@@ -28,6 +28,7 @@ echo "<br>Linnanimi esimene täht: ".substr($name, 0, 1);
 echo "<br>Linnanimi reverse: ".strrev($name);
 echo "<br>Linnanimi teise pool: ".strstr($name,"d");
 echo "<br>Linnanimi random: ".str_shuffle($name);
-echo "<br><a href='content/harjutused/vastus.php'>Õiged vastused</a>";
-?>
-
+echo "<br><form method='post'><input type='submit' name='button1' value='Vastused'/></form>";
+if (isset($_POST['button1'])) {
+    include('vastus.php');
+}

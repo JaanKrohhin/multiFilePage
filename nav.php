@@ -9,5 +9,6 @@
         <a href="?leht=content/Task8/puzzle">Puzzle</a>
         <a href="?leht=content/Task7Calculator/calculators">Calculator</a>
         <a href="?leht=pildid">Pildid</a>
+        <a href="?leht=sql/index">Andmebaas</a>
     </div>
 </nav>
